@@ -7,9 +7,10 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
+   --cor-de-fundo: #EEEEEE;
    --cor-de-link: #000;
-   --cor-de-fuente: #464646;
+   --cor-de-fuente: #393E46;
+   --cor-de-fundo-secundario: #FFD369;
 }
 
 body {
@@ -21,9 +22,14 @@ body {
     line-height: 1;
     padding: 0 5%;
 }
-/*ol, ul,li {
+
+h3 {
+    font-size: 32px;
+}
+
+ol, ul,li {
     list-style: none;
-}*/ul
+}
 a{
     text-decoration: none;
     color: var(--cor-de-link);
@@ -68,7 +74,7 @@ https://en.bem.info/methodology/quick-start/ */
 
 .menu__list__item a{
     margin-right: 16px;
-    background-color: #2A7AE4;
+    background-color: #222831;
     padding: 10px 5px;
     border-radius: 5px;
     color: #F5F5F5;
@@ -124,14 +130,46 @@ https://en.bem.info/methodology/quick-start/ */
 
 /*Sección About*/
 
-section.about{
-
+.about{
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background-color: var(--cor-de-fundo-secundario);
+    border-radius: 20px;
+    margin-bottom: 32px;
 }
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.about__title{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
 
 /*Sección Hobbies*/
 
-section.hobbies{
-    
+.skills, .hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+    text-align: center;
+}
+
+.skills__line, .hobbies__line{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    justify-content: space-evenly;
 }
 
 /* Experiencia Académica*/
