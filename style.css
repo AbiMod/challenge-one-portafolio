@@ -7,10 +7,10 @@ coloque nas sessões indicadas*/
 :root{
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #EEEEEE;
-   --cor-de-link: #000;
-   --cor-de-fuente: #393E46;
-   --cor-de-fundo-secundario: #FFD369;
+   --cor-de-fundo: #1e2124;
+   --cor-de-link: #F7F7F7;
+   --cor-de-fuente: #F7F7F7;
+   --cor-de-fundo-secundario: #001d3d;
 }
 
 body {
@@ -30,9 +30,15 @@ h3 {
 ol, ul,li {
     list-style: none;
 }
+
 a{
     text-decoration: none;
     color: var(--cor-de-link);
+}
+
+a:hover{
+    color: skyblue;
+    transition: 1s;
 }
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
@@ -73,14 +79,11 @@ https://en.bem.info/methodology/quick-start/ */
 }
 
 .menu__list__item a{
-    margin-right: 16px;
-    background-color: #222831;
+    margin-right: 32px;
     padding: 10px 5px;
     border-radius: 5px;
-    color: #F5F5F5;
     text-decoration: none;
 }
-
 /*Sección Title*/
 
 .title{
@@ -91,7 +94,7 @@ https://en.bem.info/methodology/quick-start/ */
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .title__container{
@@ -122,6 +125,7 @@ https://en.bem.info/methodology/quick-start/ */
     gap: 32px;
     padding: 0;
 }
+
 
 .title__profile{
     border-radius: 360px;
@@ -161,28 +165,137 @@ https://en.bem.info/methodology/quick-start/ */
 .skills, .hobbies {
     display: flex;
     flex-direction: column;
-    gap: 88px;
+    gap: 20px;
     text-align: center;
+    margin-bottom: 64px;
 }
 
 .skills__line, .hobbies__line{
     display: flex;
     align-items: flex-start;
-    gap: 16px;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+.skills__box, .hobbies__box{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 200px;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px ;
+    background-color: #F7F7F7;
+    color: #202020;
+}
+
+.skills__box:hover, .hobbies__box:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.skills__img, .hobbies__img{
+    width: 50px;
 }
 
 /* Experiencia Académica*/
 
-section.academic{
+.academic{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-de-fundo-secundario);
+    padding: 82px;
+    gap: 32px;
+    border-radius: 20px;
+    margin-bottom: 64px;
+}
 
+.academic__courses{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.academic__courses__box{
+    width: 300px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.academic__courses__item__img{
+    width: 250px;
+    border-radius: 100%;
 }
 
 /* experiencia*/
 
-section.experience{
-
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 64px;
 }
+
+.experience__section__title{
+    text-align: center;
+}
+
+.experience__box1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f7f7f72a;
+    border-radius: 20px;
+}
+
+.experience__box2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.experience__img{
+    width: 30%;
+}
+
+.experiencia__botao--repo{
+    border-style: solid;
+    border-color: #208cff;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #208cff;
+}
+
+.experiencia__botao--repo:hover{
+    background-color: #208cff;
+    color: #F7F7F7;
+    transition: 1s;
+}
+
+.experience__botao--demo{
+    border-style: solid;
+    border-color: #F7F7F7;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #F7F7F7;
+}
+
+.experience__botao--demo:hover{
+    background-color: #F7F7F7;
+    color: #202020;
+    transition: 1s;
+}
+
 
 /*Contacto*/
 
