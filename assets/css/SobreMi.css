@@ -1,0 +1,24 @@
+/*Sección About*/
+
+.about{
+    display: flex;
+    padding: 64px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background-color: var(--cor-de-fundo-secundario);
+    border-radius: 20px;
+    margin-bottom: 32px;
+}
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.about__title{
+    font-weight: 700;
+}

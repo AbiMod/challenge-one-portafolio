@@ -1,0 +1,38 @@
+/*Sección Hobbies*/
+
+.skills, .hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.skills__line, .hobbies__line{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skills__box, .hobbies__box{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 175px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px ;
+    background-color: #F7F7F7;
+    color: #202020;
+    margin: 10px;
+}
+
+.skills__box:hover, .hobbies__box:hover{
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+.skills__img, .hobbies__img{
+    width: 3rem;
+}

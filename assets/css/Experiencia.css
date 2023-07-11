@@ -1,0 +1,63 @@
+/* experiencia*/
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.experience__section__title{
+    text-align: center;
+}
+
+.experience__box1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f7f7f72a;
+    border-radius: 20px;
+}
+
+.experience__box2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.experience__img{
+    width: 50%;
+}
+
+.experiencia__botao--repo{
+    border-style: solid;
+    border-color: #208cff;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #208cff;
+}
+
+.experiencia__botao--repo:hover{
+    background-color: #208cff;
+    color: #F7F7F7;
+    transition: 1s;
+}
+
+.experience__botao--demo, .formcontato__botao{
+    border-style: solid;
+    border-color: #F7F7F7;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #F7F7F7;
+}
+
+.experience__botao--demo:hover, .formcontato__botao:hover{
+    background-color: #F7F7F7;
+    color: #202020;
+    transition: 1s;
+}

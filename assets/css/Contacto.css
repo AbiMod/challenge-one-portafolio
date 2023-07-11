@@ -1,0 +1,48 @@
+/*Contacto*/
+
+.formcontato{
+    display: flex;
+    background-color: var(--cor-de-fundo-secundario);
+    padding: 64px;
+    border-radius: 20px;
+}
+
+.formcontato__contacto{
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+
+.formcontato--esquerda{
+    display: contents;
+}
+
+.formcontato__img{
+    width: 40%;
+}
+
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.formcontato__input, .formcontato__textarea{
+    width: 100%;
+    padding: 8px 0px;
+    border: 2px solid #F7F7F7;
+    border-radius: 4px;
+    font-family: 'Raleway';
+}
+
+.formcontato__input:focus, .formcontato__textarea:focus{
+    outline: none;
+    border: 2px solid #208cff;
+    transition: 500ms;
+}

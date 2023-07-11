@@ -1,0 +1,47 @@
+/*Sección Title*/
+
+.title{
+    margin-bottom: 1rem;
+}
+
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+    align-self: stretch;
+}
+
+.title__bio{
+    font-size: 3rem;
+    font-weight: 700;
+    align-self: stretch;
+    color: #208cff;
+}
+
+.title__subsection{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.title__network{
+    list-style: none;
+    font-size: 16px;
+    display: flex;
+    gap: 32px;
+    padding: 0;
+}
+
+
+.title__profile{
+    border-radius: 360px;
+    width: 30%;
+}
